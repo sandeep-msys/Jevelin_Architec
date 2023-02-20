@@ -1,0 +1,53 @@
+.Navbar-container {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 6%;
+
+    .navbar-burger-icon-container {
+
+        .burger-icon {
+            font-size: 30px;
+        }
+    }
+
+    .navbar-options-container {
+        display: none;
+
+        .navbar-menu {
+            font-size: 16px;
+            color: #363530;
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .Navbar-container {
+        padding: 4% 7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Navbar-container {
+        padding: 2% 5%;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Navbar-container {
+        padding: 3% 5%;
+        align-items: center;
+
+        .navbar-burger-icon-container {
+            display: none;
+        }
+
+        .navbar-options-container {
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            width: 27%;
+        }
+    }
+}

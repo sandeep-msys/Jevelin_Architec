@@ -1,0 +1,133 @@
+.Footer-container {
+    height: 60vh;
+    background-color: #363636;
+    color: #ffffff;
+
+    .footer-initial-container {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1% 15%;
+        border-bottom: 1px solid #767676;
+
+        .footer-title-image {
+            width: 120px;
+        }
+
+        .footer-menu-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .footer-each-menu {
+                font-size: 14px;
+            }
+        }
+
+        .footer-social-container {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .footer-copyright-container {
+        background-color: #363636;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .copyright {
+            font-size: 12px;
+            color: #a1a1a1;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 425px) {
+    .Footer-container {
+        height: 45vh;
+
+        .footer-initial-container {
+            height: 70%;
+            .footer-menu-container {
+                width: 80%;
+            }
+        }
+        .footer-copyright-container{
+            height: 20%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Footer-container {
+        height: 30vh;
+
+        .footer-initial-container {
+            .footer-menu-container {
+                width: 50%;
+            }
+
+            .footer-social-container {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Footer-container {
+        height: 15vh;
+
+        .footer-initial-container {
+            height: 30%;
+            padding: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .footer-menu-container {
+                width: 30%;
+
+                .footer-each-menu {
+                    margin: 0%;
+                }
+            }
+
+            .footer-social-container {
+                width: 17%;
+            }
+        }
+
+        .footer-copyright-container {
+            height: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Footer-container {
+        height: 28vh;
+
+        .footer-initial-container {
+            height: 50%;
+            padding: 0%;
+            padding-top: 4%;
+            padding-left: 5%;
+            padding-right: 5%;
+
+        }
+
+        .footer-copyright-container {
+            height: 40%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.Team-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 0%;
+
+    .team-title-container {
+        width: 80%;
+        // border: 1px solid red;
+
+        .team-heading {
+            font-size: 48px;
+            color: #363636;
+        }
+
+        .team-matter {
+            font-size: 17px;
+            color: #707070;
+            margin: 0%;
+        }
+    }
+
+    .team-members-container {
+        padding: 10% 1%;
+        // border: 1px solid red;
+
+        .each-team-member-container {
+            // border: 1px solid blue;
+            text-align: start;
+            padding: 8% 0%;
+
+            .team-member-avatar {
+                width: 100%;
+            }
+
+            .team-member-name {
+                color: #363636;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            .team-member-designation {
+                color: #363636;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .Team-container {
+        .team-title-container {
+            height: 50vh;
+
+            .team-heading {
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Team-container {
+        padding-top: 0%;
+
+        .team-title-container {
+            height: 15vh;
+
+            .team-heading {
+                margin-bottom: 1%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .Team-container {
+        .team-members-container {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 7%;
+
+            .each-team-member-container {
+                width: 30%;
+                margin: 1%;
+                margin-bottom: 8%;
+                padding: 0%;
+
+                .team-member-designation {
+                    margin-top: 1%;
+                }
+
+                .team-member-name {
+                    margin-bottom: 2%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Team-container {
+        // border: 1px solid red;
+        padding-bottom: 5%;
+
+        .team-title-container {
+            height: auto;
+        }
+
+        .team-members-container {
+            padding-top: 11%;
+            padding-bottom: 0%;
+            .each-team-member-container{
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
